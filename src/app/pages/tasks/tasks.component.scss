@@ -1,0 +1,22 @@
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+  padding: 24px;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.add-task-btn {
+  width: 100%;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  padding: 20px;
+}

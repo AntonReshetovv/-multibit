@@ -1,1 +1,15 @@
-<p>tasks works!</p>
+<mat-card class="wrapper">
+  <mat-card-title class="title">Список задач</mat-card-title>
+  <mat-card-header>
+    <app-search (searchChanged)="onSearchValue($event)"></app-search>
+  </mat-card-header>
+  <mat-card-content>
+    <app-task-list [searchValue]="searchValue"></app-task-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button class="add-task-btn" mat-raised-button color="primary" (click)="openDialog()">
+      <mat-icon>add</mat-icon>
+      Добавить задачу
+    </button>
+  </mat-card-actions>
+</mat-card>
