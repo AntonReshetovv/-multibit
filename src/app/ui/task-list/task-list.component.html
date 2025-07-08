@@ -1,9 +1,6 @@
 <mat-selection-list #shoes>
   <mat-list-option *ngFor="let shoe of typesOfShoes">
-    <div class="task">
-      <div class="task__title">{{shoe}}</div>
-      <div class="task__description">Описание</div>
-    </div>
+    <app-task-item class="task" [task]="shoe"></app-task-item>
      <div class="task-actions">
         <button mat-button 
                 (click)="onReadMore($event)">Подробнее</button>

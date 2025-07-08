@@ -1,0 +1,9 @@
+.task {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+        min-width: 150px;
+    }
+}
