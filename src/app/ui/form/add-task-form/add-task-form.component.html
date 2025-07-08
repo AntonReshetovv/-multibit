@@ -1,0 +1,11 @@
+<form class="form" [formGroup]="form" (ngSubmit)="addTask()">
+  <mat-form-field appearance="outline">
+    <mat-label>Заголовок</mat-label>
+    <input matInput formControlName="title">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Описание</mat-label>
+    <textarea matInput rows="3" formControlName="description"></textarea>
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit">Добавить</button>
+</form>
