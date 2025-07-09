@@ -27,15 +27,16 @@ export class TasksComponent {
   constructor(private dialog: MatDialog) {
   }
 
-  openDialog() {
+  openDialog(): void {
     this.dialog.open(AddTaskFormComponent, {
       width: '400px',
+      panelClass: 'custom-dialog-panel'
     });
 
     (document.activeElement as HTMLElement)?.blur()
   }
 
-  onSearchValue(value: string) {
+  onSearchValue(value: string): void {
     this.searchValue = value
   }
 }
