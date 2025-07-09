@@ -4,6 +4,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogRef} from '@angular/material/dialog';
+import {NgIf} from "@angular/common";
 
 import {TaskService} from 'src/app/services/task.service';
 
@@ -17,7 +18,8 @@ import {TaskService} from 'src/app/services/task.service';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgIf
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

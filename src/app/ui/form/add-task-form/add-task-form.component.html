@@ -2,6 +2,10 @@
   <mat-form-field appearance="outline">
     <mat-label>Заголовок</mat-label>
     <input matInput formControlName="title">
+    <mat-error
+      *ngIf="form.controls.title.hasError('required') && (form.controls.title.dirty || form.controls.title.touched)">
+      Заголовок обязателен
+    </mat-error>
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Описание</mat-label>
