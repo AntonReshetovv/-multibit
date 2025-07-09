@@ -1,27 +1,37 @@
 # Multibit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+Этот проект был создан с помощью [Angular CLI](https://github.com/angular/angular-cli) версии 15.2.1.
 
-## Development server
+## Требования
+- Наличие установленной Node.js версии **16.x** или **18.x**  
+  Рекомендуется использовать [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) для управления версиями Node.js:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  ```bash
+  nvm install 18
+  nvm use 18
 
-## Code scaffolding
+- Наличие установленного Angular CLI (если не установлен глобально)
+  npm install -g @angular/cli@15.2.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Установка зависимостей проекта после скачивания с репозитория
+   npm install
 
-## Build
+## Локальный запуск проекта
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Выполните команду `ng serve`, чтобы запустить сервер разработки. Перейдите в браузере по адресу `http://localhost:4200/`. Приложение будет автоматически перезагружаться при изменении исходных файлов.
 
-## Running unit tests
+## Сборка проекта
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Выполните `ng build`, чтобы собрать проект. Результаты сборки будут сохранены в папке `dist/`.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Реализованный функционал в проекте:
+- Просмотр список задач
+- Добавление новой задачи
+- Удаление задачи
+- Просмотр детальной информации задачи на отдельной странице
+- Валидация формы при создании задачи
+- Переход на страницу со списком задач со страницы детальной информации задачи
+- Поиск задач по title
+- Изменение статуса задачи и подсчет количества выполненных задач
+- Оптимизация производительности при отображении большого количества элементов (Virtual Scroll)
+- Стилизация через Angular Material
