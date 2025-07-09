@@ -2,11 +2,9 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog'
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
-import {TaskListComponent} from 'src/app/ui/list/task-list/task-list.component';
-import {SearchComponent} from "src/app/ui/search/search.component";
-import {AddTaskFormComponent} from "src/app/ui/form/add-task-form/add-task-form.component";
+import {TaskListComponent, SearchComponent, AddTaskFormComponent} from 'src/app/ui';
 
 @Component({
   selector: 'app-tasks',

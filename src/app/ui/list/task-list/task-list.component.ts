@@ -46,7 +46,7 @@ export class TaskListComponent {
     this.tasksObs = this.taskService.tasksObs.pipe(
       tap((tasks) => {
         const completedTasksCount = tasks.reduce((acc, cur) => {
-          if(cur.status) {
+          if (cur.status) {
             acc += 1
           }
           return acc
@@ -65,12 +65,12 @@ export class TaskListComponent {
     )
   }
 
-  onReadMore(event: Event, id: string) {
+  onReadMore(event: Event, id: string): void {
     event.stopPropagation()
     this.router.navigate(['tasks/', id])
   }
 
-  onRemove(event: Event, id: string) {
+  onRemove(event: Event, id: string): void {
     event.stopPropagation()
     this.taskService.delete(id)
   }

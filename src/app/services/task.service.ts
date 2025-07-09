@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 
 import {Task} from '../models/task';
-import { mockData } from '../mock/mock-data';
+import {mockData} from '../mock/mock-data';
 
 @Injectable({
   providedIn: 'root'
@@ -33,10 +33,10 @@ export class TaskService {
 
   update(updatedTask: Task): void {
     const updatedTasks = this.taskList.map(task =>
-      task.id === updatedTask.id ? { ...task, ...updatedTask } : task
+      task.id === updatedTask.id ? {...task, ...updatedTask} : task
     )
-  this.tasks$.next(updatedTasks)
-}
+    this.tasks$.next(updatedTasks)
+  }
 
   delete(id: string): void {
     this.tasks$.next(this.taskList.filter(task => task.id !== id))

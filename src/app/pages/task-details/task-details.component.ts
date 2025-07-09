@@ -4,7 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 
 import {Task} from 'src/app/models/task';
 import {TaskService} from 'src/app/services/task.service';
-import {TaskItemComponent} from "src/app/ui/list/task-item/task-item.component";
+import {TaskItemComponent} from "src/app/ui";
 
 @Component({
   selector: 'app-task-details',
