@@ -69,13 +69,11 @@ export class TaskListComponent {
     return task.id
   }
 
-  onMoreDetails(event: Event, id: string): void {
-    event.stopPropagation()
+  onMoreDetails(id: string): void {
     this.router.navigate(['tasks/', id])
   }
 
-  onRemove(event: Event, id: string): void {
-    event.stopPropagation()
+  onRemove(id: string): void {
     this.taskService.delete(id)
   }
 
