@@ -1,8 +1,8 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
 import {debounceTime, distinctUntilChanged, Subject, takeUntil} from 'rxjs';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input'
-import {MatIconModule} from '@angular/material/icon'
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-search',
@@ -14,7 +14,7 @@ import {MatIconModule} from '@angular/material/icon'
 })
 export class SearchComponent implements OnInit, OnDestroy {
   @Output() searchChanged = new EventEmitter<string>();
-  searchControl = new FormControl('')
+  searchControl = new FormControl('');
 
   private destroy$ = new Subject<void>();
 
