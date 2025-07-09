@@ -1,81 +1,158 @@
-import { Task } from "../models/task";
+import {Task} from "../models/task";
 
-export const mockData: Task[] =[
-        {
-          id: "323fefwefew",
-          title: 'Сходить в бассейн',
-          status: false,
-        },
-        {
-          id: "323fefwf44343r34",
-          title: 'Сходить на море',
-          description: 'Предложили сходить на косу, там сегодня водичка прозрачная и теплая. На пляже находится воллейбол, а также зона барбекю ))',
-          status: false,
-        },
-        {
-          id: "323",
-          title: 'Купить лимонад',
-          description: 'Сегодня в жаркий день я предпочитаю ТАРХУН!!!!',
-          status: false,
-        },
-        {
-          id: "302402-4атлуауа",
-          title: 'Почитать хабр',
-          description: 'Статейки по Ангулярчику вышли, нужно чекнуть )',
-          status: false,
-        },
-        {
-          id: "ащ32щщ24щщ4239931391-23",
-          title: 'Спеть песню',
-          description: 'In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!',
-          status: false,
-        },
-        {
-          id: "fejfwnfnfe233",
-          title: 'Сходить на лыжи',
-          description: 'Снег сегодня мягкий, планирую 5 км пробежать )',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr434234",
-          title: 'Погладить кота',
-          description: 'Котенок маленький, требует ласки, нужно не забыть его по чесать )))',
-          status: false,
-        },
-        {
-          id: "111123424ауа323",
-          title: 'Сделать дома ремонт',
-          description: 'Балкон, кухню да вообще можно все по новой делать ))',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr43яяя",
-          title: 'Покушать',
-          description: 'Профит есть - можно поесть ))) сегодня у меня сосиски с лапшой ))',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr43ауа",
-          title: 'Не забыть сходить за хлебом',
-          description: 'Вспомнил кореша своего, у него татуха на руки с такой надписью )))',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr4332342",
-          title: 'Купить молоко',
-          description: 'завод Ирмень',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr43ддда",
-          title: 'Встреча с коллегами',
-          description: 'Обсудить задачу, помочь найти решение! Главное команда!',
-          status: false,
-        },
-        {
-          id: "323fefwf44332r3tr43яажуалжуа",
-          title: 'Выйти погулять',
-          description: 'сегодня цели пройти минимум 10км',
-          status: false,
-        }
+export const mockData: Task[] = [
+  {
+    id: "323fefwefew",
+    title: 'Сходить в бассейн',
+    status: false,
+  },
+  {
+    id: "323fefwf44343r34",
+    title: 'Сходить на море',
+    description: 'Предложили сходить на косу, там сегодня водичка прозрачная и теплая. На пляже находится воллейбол, а также зона барбекю ))',
+    status: false,
+  },
+  {
+    id: "323",
+    title: 'Купить лимонад',
+    description: 'Сегодня в жаркий день я предпочитаю ТАРХУН!!!!',
+    status: false,
+  },
+  {
+    id: "302402-4атлуауа",
+    title: 'Почитать хабр',
+    description: 'Статейки по Ангулярчику вышли, нужно чекнуть )',
+    status: false,
+  },
+  {
+    id: "ащ32щщ24щщ4239931391-23",
+    title: 'Спеть песню',
+    description: 'In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!',
+    status: false,
+  },
+  {
+    id: "fejfwnfnfe233",
+    title: 'Сходить на лыжи',
+    description: 'Снег сегодня мягкий, планирую 5 км пробежать )',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr434234",
+    title: 'Погладить кота',
+    description: 'Котенок маленький, требует ласки, нужно не забыть его по чесать )))',
+    status: false,
+  },
+  {
+    id: "111123424ауа323",
+    title: 'Сделать дома ремонт',
+    description: 'Балкон, кухню да вообще можно все по новой делать ))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43яяя",
+    title: 'Покушать',
+    description: 'Профит есть - можно поесть ))) сегодня у меня сосиски с лапшой ))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43ауа",
+    title: 'Не забыть сходить за хлебом',
+    description: 'Вспомнил кореша своего, у него татуха на руки с такой надписью )))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr4332342",
+    title: 'Купить молоко',
+    description: 'завод Ирмень',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43ддда",
+    title: 'Встреча с коллегами',
+    description: 'Обсудить задачу, помочь найти решение! Главное команда!',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43яажуалжуа",
+    title: 'Выйти погулять',
+    description: 'сегодня цели пройти минимум 10км',
+    status: false,
+  },
+  {
+    id: "323fefwefew123",
+    title: 'Сходить в бассейн версия 2',
+    status: false,
+  },
+  {
+    id: "323fefwf44343r34324",
+    title: 'Сходить на море версия 2',
+    description: 'Предложили сходить на косу, там сегодня водичка прозрачная и теплая. На пляже находится воллейбол, а также зона барбекю ))',
+    status: false,
+  },
+  {
+    id: "323342ау",
+    title: 'Купить лимонад версия 2',
+    description: 'Сегодня в жаркий день я предпочитаю ТАРХУН!!!!',
+    status: false,
+  },
+  {
+    id: "302402-4атлуауа5354",
+    title: 'Почитать хабр версия 2',
+    description: 'Статейки по Ангулярчику вышли, нужно чекнуть )',
+    status: false,
+  },
+  {
+    id: "ащ32щщ24щщ4239931391-2344324",
+    title: 'Спеть песню версия 2',
+    description: 'In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!  In your head Zombie!!!',
+    status: false,
+  },
+  {
+    id: "fejfwnfnfe23394204",
+    title: 'Сходить на лыжи версия 2',
+    description: 'Снег сегодня мягкий, планирую 5 км пробежать )',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr434234к3кжд4",
+    title: 'Погладить кота версия 2',
+    description: 'Котенок маленький, требует ласки, нужно не забыть его по чесать )))',
+    status: false,
+  },
+  {
+    id: "111123424ауа323213434",
+    title: 'Сделать дома ремонт версия 2',
+    description: 'Балкон, кухню да вообще можно все по новой делать ))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43яяяаждуцжа",
+    title: 'Покушать версия 2',
+    description: 'Профит есть - можно поесть ))) сегодня у меня сосиски с лапшой ))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43ауаааоуцда",
+    title: 'Не забыть сходить за хлебом версия 2',
+    description: 'Вспомнил кореша своего, у него татуха на руки с такой надписью )))',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr4332342ш43к3",
+    title: 'Купить молоко версия 2',
+    description: 'завод Ирмень',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43ддда30ш034",
+    title: 'Встреча с коллегами версия 2',
+    description: 'Обсудить задачу, помочь найти решение! Главное команда!',
+    status: false,
+  },
+  {
+    id: "323fefwf44332r3tr43яажуалжуа-02424",
+    title: 'Выйти погулять версия 2',
+    description: 'сегодня цели пройти минимум 10км',
+    status: false,
+  },
 ]

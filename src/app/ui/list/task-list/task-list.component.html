@@ -1,5 +1,5 @@
 <div class="completed-tasks">
-    Выполнено задач: {{completedTasksCount$ | async}}
+  Выполнено задач: {{ completedTasksCount$ | async }}
 </div>
 
 <div class="table-container">
@@ -20,9 +20,7 @@
       <div class="column description">{{ task.description }}</div>
       <div class="column actions">
         <button mat-stroked-button color="primary" (click)="onReadMore($event, task.id)">Подробнее</button>
-        <button mat-stroked-button color="warn" (click)="onRemove($event, task.id)">
-          <mat-icon>delete</mat-icon>
-        </button>
+        <button mat-stroked-button color="warn" (click)="onRemove($event, task.id)">Удалить</button>
       </div>
     </div>
   </cdk-virtual-scroll-viewport>
