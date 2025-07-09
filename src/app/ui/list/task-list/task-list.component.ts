@@ -2,8 +2,8 @@ import {AsyncPipe, NgIf} from '@angular/common';
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {BehaviorSubject, combineLatest, map, Observable, tap} from 'rxjs';
 import {Router} from '@angular/router';
-import {MatListModule} from '@angular/material/list'
-import {MatButtonModule} from '@angular/material/button'
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatCheckboxModule} from '@angular/material/checkbox'
@@ -65,7 +65,11 @@ export class TaskListComponent {
     )
   }
 
-  onReadMore(event: Event, id: string): void {
+  trackByTaskId(index: number, task: Task): string {
+    return task.id
+  }
+
+  onMoreDetails(event: Event, id: string): void {
     event.stopPropagation()
     this.router.navigate(['tasks/', id])
   }

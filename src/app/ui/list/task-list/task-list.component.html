@@ -11,7 +11,7 @@
   </div>
 
   <cdk-virtual-scroll-viewport itemSize="40" class="viewport" *ngIf="filteredTasksObs | async as tasks">
-    <div *cdkVirtualFor="let task of tasks" class="table-row">
+    <div *cdkVirtualFor="let task of tasks; trackBy: trackByTaskId" class="table-row">
       <div class="column status">
         <mat-checkbox [checked]="task.status"
                       (change)="onToggleStatus(task)"></mat-checkbox>
@@ -19,7 +19,7 @@
       <div class="column title">{{ task.title }}</div>
       <div class="column description">{{ task.description }}</div>
       <div class="column actions">
-        <button mat-stroked-button color="primary" (click)="onReadMore($event, task.id)">Подробнее</button>
+        <button mat-stroked-button color="primary" (click)="onMoreDetails($event, task.id)">Подробнее</button>
         <button mat-stroked-button color="warn" (click)="onRemove($event, task.id)">Удалить</button>
       </div>
     </div>
